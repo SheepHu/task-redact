@@ -1,0 +1,70 @@
+@charset "utf-8";
+*{
+	margin: 0;
+	padding: 0;
+}
+#app{
+	padding: 50px;
+	width: fit-content;
+	margin: 100px auto;
+}
+.list_task{
+	border: 1px solid #CCC;
+	border-radius: 10px;
+	padding: 20px;
+	width: 300px;
+	height: 300px;
+	float: left;
+	font-size: 18px;
+	overflow: auto;
+}
+.list_task .task_item{
+	position: relative;
+	padding: 5px;
+	cursor: pointer;
+	border-bottom: 1px solid #ccc;
+	margin-bottom: 10px;
+}
+.task_item button{
+	font-size: 18px;
+	color: #9799e2;
+	border: none;
+	background-color: #fff;
+	display: none;
+	position: absolute;
+	right: 10px;
+	cursor: pointer;
+	outline: none;
+}
+.task_item:hover button{
+	display: inline;
+}
+.add_task{
+	float: right;
+	padding: 20px;
+}
+.label_tip{
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+.task_input{
+	padding: 10px;
+	width: 200px;
+	border-radius: 5px;
+	border: none;
+	border: 1px solid #ccc;
+	font-size: 16px;
+	outline: none;
+}
+.add_task_but{
+	width: 100px;
+	height: 30px;
+	padding: 5px;
+	margin-top: 20px;
+	cursor: pointer;
+	text-align: center;
+	line-height: 30px;
+	color: #fff;
+	border-radius: 30px;
+	background-color: #0f47f4;
+}
