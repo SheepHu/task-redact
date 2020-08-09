@@ -80,7 +80,9 @@ class AddTask extends React.Component{
 	}
 	//添加任务的按钮点击事件
 	pushTask() {
-		this.props.updateTask(this.state.taskName,'add')
+		let {taskName} = this.state
+		if(taskName.trim() == '') return;
+		this.props.updateTask(taskName,'add')
 		this.setState({
 			taskName: ''
 		})
